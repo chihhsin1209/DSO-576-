@@ -53,6 +53,7 @@ The notebook checks:
 The keyword flag is a screening tool, not proof that a listing is incomplete. The next project phase should compare flagged reviews with product metadata using parent_asin.
 
 ## Git information
+
 - Branch: cleaning-joshyagupta
-- Repository: https://github.com/chihhsin1209/DSO-576-
-- Final commit ID: add after the final commit and push
+- Branch URL: https://github.com/chihhsin1209/DSO-576-/tree/cleaning-joshyagupta
+- Commit ID: e4aa651
