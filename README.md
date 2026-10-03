@@ -34,6 +34,6 @@ data/sample/appliances_cleaned_sample_yulim.csv
 - Sample rows: 50
 
 ## GitHub submission
-Branch: [add branch name]
-Branch URL: [add branch URL]
-Commit ID: [add commit ID]
+Branch: yulim_jang
+Branch URL: https://github.com/chihhsin1209/DSO-576-/tree/yulim_jang
+Commit ID: 022581f
