@@ -3,7 +3,6 @@
 - Branch: `cleaning-waynechen`
 - Branch URL: https://github.com/chihhsin1209/DSO-576-/tree/cleaning-waynechen
 - Submitted commit ID: 67d79b3
-- Source ZIP snapshot commit: `14d977ee9dc441249520bb74b17cabaa72ab874e`
 
 ## Project and source
 
