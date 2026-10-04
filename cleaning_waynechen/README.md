@@ -60,9 +60,3 @@ Committed evidence:
 - `docs/cleaning_rules.md`, `record_expectations.json`: rules and expectations separate from transformation code.
 - `Wayne_Chen_Module_6_Report.pdf`: individual Gradescope report with all 14 checklist items, decision log and five record checks.
 
-## Decisions and limitations
-
-Exact duplicates are removed based on full original parsed records, before normalization. Distinct repeated `(user_id, asin, timestamp)` records stay flagged; no natural unique review key is assumed. Identifiers retain leading zeros/case. Normalize human prose conservatively; retain punctuation, typos, internal spacing, non-br markup, and nested lists/dictionaries. No unsupported imputation is made. Review-body denominator is `693,548`; known rating and purchase denominators are `694,253`. Products with missing grouping keys would be excluded and counted (0 here). Missing listing prices remain unknown, not zero; count of known prices is `17,704`.
-
-All metadata category lists are empty; taxonomy anomalies and the retained repeated candidate key require later manual/source review. Historical listings are not current Amazon pages. Missing copy or keyword mentions cannot prove a listing gap, causality, sales, conversion or ROI. `rating_number` is feedback reach, not sales. Current authorized listing snapshots and business metrics are required for actionable conclusions. Review all Codex decisions and record checks before submitting.
-
