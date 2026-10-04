@@ -3,9 +3,7 @@
 - Branch: `cleaning-waynechen`
 - Branch URL: https://github.com/chihhsin1209/DSO-576-/tree/cleaning-waynechen
 - Submitted commit ID: `PENDING_USER_PUSH`
-- Source ZIP snapshot commit: `14d977ee9dc441249520bb74b17cabaa72ab874e` (old branch, not new submission).
-
-**Before submitting:** follow START_HERE.md. Upload this folder to your own branch, copy the new code/evidence commit ID into the Word report and README, then export the Word report to PDF.
+- Source ZIP snapshot commit: `14d977ee9dc441249520bb74b17cabaa72ab874e`
 
 ## Project and source
 
@@ -68,12 +66,3 @@ Exact duplicates are removed based on full original parsed records, before norma
 
 All metadata category lists are empty; taxonomy anomalies and the retained repeated candidate key require later manual/source review. Historical listings are not current Amazon pages. Missing copy or keyword mentions cannot prove a listing gap, causality, sales, conversion or ROI. `rating_number` is feedback reach, not sales. Current authorized listing snapshots and business metrics are required for actionable conclusions. Review all Codex decisions and record checks before submitting.
 
-## What to submit
-
-**Gradescope:** one final PDF report. The `.docx` file is an editable copy; export it to PDF after any edits.
-
-**GitHub:** upload this whole `cleaning_waynechen/` folder to the `cleaning-waynechen` branch, preserving its structure. The folder includes the scripts, executed notebook, 50-row cleaned sample, dependencies, source manifest, and verification evidence.
-
-Follow **START_HERE.md** for the simple browser upload steps and commit-ID update. The copied commit ID identifies the cleaning code and evidence; a later documentation commit can add that ID to the report/README without changing the underlying results.
-
-The included `scripts/finalize_submission.py --commit FULL_COMMIT_ID` is an optional scripted way to update PDF/README metadata. It does not update the Word file. Review your own report and record checks before submitting. Give your instructor repository access. No GitHub upload or Gradescope submission was performed here.
