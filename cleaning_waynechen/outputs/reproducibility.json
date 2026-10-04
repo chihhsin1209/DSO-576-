@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "fresh_python_process": true,
+  "compared_artifact_count": 11,
+  "all_csv_json_jsonl_sha256_match": true,
+  "independent_verification_matches": true,
+  "logical_database_sha256": "586479d367e2af95ec24b6c77adfd6f6d14d9bb9b65d5a0af09de0fd71c2024c",
+  "notebook_execution": "See outputs/notebook_execution.json; separate fresh Python/IPython namespace."
+}

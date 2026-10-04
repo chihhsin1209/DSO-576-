@@ -1,0 +1,9 @@
+{
+  "fresh_python_process": true,
+  "fresh_ipython_namespace": true,
+  "execution_method": "All code cells executed in order by scripts/execute_notebook.py; in-process IPython avoids a socket-backed Jupyter server.",
+  "all_code_cells_completed": true,
+  "code_cell_count": 7,
+  "python_version": "3.12.14",
+  "executed_from_original_raw_files": true
+}

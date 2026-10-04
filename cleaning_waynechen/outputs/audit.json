@@ -1,0 +1,510 @@
+{
+  "duplicates": {
+    "metadata_conflicting_parent_keys": 0,
+    "metadata_repeated_parent_groups_after_exact_dedup": 0,
+    "metadata_rows_excluded_from_join_for_conflicts": 0,
+    "raw_repeated_review_candidate_groups": 6139,
+    "raw_rows_in_repeated_review_candidate_groups": 13415,
+    "repeated_review_identifiers": {
+      "asin": {
+        "groups": 66456,
+        "repeats_beyond_first": 578544,
+        "rows_in_groups": 645000
+      },
+      "parent_asin": {
+        "groups": 64621,
+        "repeats_beyond_first": 581688,
+        "rows_in_groups": 646309
+      },
+      "user_id": {
+        "groups": 43045,
+        "repeats_beyond_first": 62267,
+        "rows_in_groups": 105312
+      }
+    },
+    "retained_repeated_review_candidate_groups": 1,
+    "retained_rows_in_repeated_review_candidate_groups": 2
+  },
+  "input_integrity": {
+    "All_Beauty.jsonl": "36ca7c48440a8247b2dca0174d095238422b506a8a80c114dca722b7715f1c94",
+    "meta_All_Beauty.jsonl": "1cfbdf6d2ccf9c3ac52a4508b15f31f8f340508a245b65c3e3b5f461e06e97ef"
+  },
+  "logical_database_sha256": "586479d367e2af95ec24b6c77adfd6f6d14d9bb9b65d5a0af09de0fd71c2024c",
+  "merge": {
+    "eligible_metadata_rows": 112590,
+    "joined_rows": 694253,
+    "matched_parent_keys": 112565,
+    "matched_rows": 694253,
+    "metadata_without_reviews": 25,
+    "missing_parent_key_rows": 0,
+    "unmatched_parent_keys": 0,
+    "unmatched_review_rows": 0
+  },
+  "metrics": {
+    "average_rating": 3.960893219042626,
+    "date_max": "2023-09-09T00:39:36.666+00:00",
+    "date_min": "2000-11-01T04:24:18.000+00:00",
+    "helpful_n": 694253,
+    "helpful_vote_sum": 641610,
+    "in_scope_date_n": 694253,
+    "negative_review_n": 143489,
+    "negative_review_rate": 0.20668113785608416,
+    "parent_product_n": 112565,
+    "purchase_n": 694253,
+    "rating_n": 694253,
+    "rating_sum": 2749862,
+    "review_body_n": 693548,
+    "review_count": 694253,
+    "reviewer_n": 631986,
+    "verified_purchase_n": 628456,
+    "verified_purchase_rate": 0.9052261927568191
+  },
+  "reconciliation": {
+    "helpful_vote": {
+      "cleaned_sum": 641610,
+      "difference_after_duplicate_accounting": 0,
+      "duplicate_sum_removed": 6313,
+      "original_sum": 647923
+    },
+    "metadata_totals": {
+      "price_n": 17704,
+      "price_sum": 482535.44,
+      "rating_number_sum": 5690450
+    },
+    "rating": {
+      "cleaned_sum": 2749862,
+      "difference_after_duplicate_accounting": 0.0,
+      "duplicate_sum_removed": 28361.0,
+      "original_sum": 2778223.0
+    }
+  },
+  "rules_file": "docs/cleaning_rules.md",
+  "sample": {
+    "case_source_lines": [
+      37,
+      19599,
+      15160,
+      9585,
+      1,
+      13846,
+      4,
+      25,
+      622810,
+      618107,
+      542034,
+      639450,
+      412967,
+      658361,
+      660782,
+      647736,
+      619665,
+      280172,
+      473776,
+      380240,
+      524840,
+      208322,
+      432132,
+      311455,
+      314087,
+      570892,
+      197277,
+      514436,
+      476046,
+      336233,
+      624887,
+      658184,
+      104792,
+      681235,
+      489215,
+      159674,
+      645037,
+      394395,
+      189947,
+      647585,
+      242907,
+      164108,
+      286743,
+      153705,
+      8085,
+      341250,
+      439132,
+      638273,
+      456144,
+      222952
+    ],
+    "method": "Difficult cases first, then SHA256(record_id) ascending; no representativeness claimed.",
+    "rows": 50
+  },
+  "source": {
+    "dataset": "McAuley-Lab/Amazon-Reviews-2023",
+    "dataset_url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023",
+    "download_date": "2026-10-04 (America/Los_Angeles)",
+    "files": [
+      {
+        "filename": "All_Beauty.jsonl",
+        "path": "raw/review_categories/All_Beauty.jsonl",
+        "rows": 701528,
+        "sha256": "36ca7c48440a8247b2dca0174d095238422b506a8a80c114dca722b7715f1c94",
+        "size": 326611506
+      },
+      {
+        "filename": "meta_All_Beauty.jsonl",
+        "path": "raw/meta_categories/meta_All_Beauty.jsonl",
+        "rows": 112590,
+        "sha256": "1cfbdf6d2ccf9c3ac52a4508b15f31f8f340508a245b65c3e3b5f461e06e97ef",
+        "size": 212990142
+      }
+    ],
+    "metadata_format_note": "Uses the full raw metadata JSONL published at the pinned revision rather than the parquet opened in the team's preliminary exploration. Full row count is independently checked; files are not claimed byte-equivalent.",
+    "revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+    "scope": "Full All_Beauty review and metadata categories",
+    "source_branch_snapshot_commit": "14d977ee9dc441249520bb74b17cabaa72ab874e"
+  },
+  "suspicious": {
+    "helpful_vote_p99": 13,
+    "max_helpful_vote": 646,
+    "max_listing_rating_count": 30206,
+    "max_price": 2548.98,
+    "max_timestamp": 1694219976666,
+    "min_price": 0.01,
+    "min_timestamp": 973052658000
+  },
+  "tables": {
+    "metadata": {
+      "changed_fields": {
+        "description": 10,
+        "details": 297,
+        "features": 58,
+        "title": 22
+      },
+      "cleaned_profile": {
+        "missing": {
+          "bought_together": 112590,
+          "categories": 112590,
+          "description": 93428,
+          "details": 4512,
+          "features": 95213,
+          "price": 94886,
+          "store": 11331,
+          "title": 12,
+          "videos": 96708
+        },
+        "types": {
+          "average_rating": {
+            "float": 112590
+          },
+          "bought_together": {
+            "NoneType": 112590
+          },
+          "categories": {
+            "list": 112590
+          },
+          "description": {
+            "list": 112590
+          },
+          "details": {
+            "dict": 112590
+          },
+          "features": {
+            "list": 112590
+          },
+          "images": {
+            "list": 112590
+          },
+          "main_category": {
+            "str": 112590
+          },
+          "parent_asin": {
+            "str": 112590
+          },
+          "price": {
+            "NoneType": 94886,
+            "float": 17704
+          },
+          "rating_number": {
+            "int": 112590
+          },
+          "store": {
+            "NoneType": 11331,
+            "str": 101259
+          },
+          "title": {
+            "NoneType": 12,
+            "str": 112578
+          },
+          "videos": {
+            "list": 112590
+          }
+        }
+      },
+      "errors": {},
+      "exact_duplicate_rows_removed": 0,
+      "flags": {
+        "category_unavailable": 112590,
+        "missing_listing_title": 12
+      },
+      "raw_numeric_totals": {
+        "price": 482535.43999997014,
+        "rating_number": 5690450
+      },
+      "raw_profile": {
+        "missing": {
+          "bought_together": 112590,
+          "categories": 112590,
+          "description": 93428,
+          "details": 4512,
+          "features": 95213,
+          "price": 94886,
+          "store": 11331,
+          "title": 12,
+          "videos": 96708
+        },
+        "types": {
+          "average_rating": {
+            "float": 112590
+          },
+          "bought_together": {
+            "NoneType": 112590
+          },
+          "categories": {
+            "list": 112590
+          },
+          "description": {
+            "list": 112590
+          },
+          "details": {
+            "dict": 112590
+          },
+          "features": {
+            "list": 112590
+          },
+          "images": {
+            "list": 112590
+          },
+          "main_category": {
+            "str": 112590
+          },
+          "parent_asin": {
+            "str": 112590
+          },
+          "price": {
+            "NoneType": 94886,
+            "float": 17704
+          },
+          "rating_number": {
+            "int": 112590
+          },
+          "store": {
+            "NoneType": 11331,
+            "str": 101259
+          },
+          "title": {
+            "str": 112590
+          },
+          "videos": {
+            "list": 112590
+          }
+        }
+      },
+      "raw_rows": 112590,
+      "removed_duplicate_totals": {},
+      "retained_before_cleaning_profile": {
+        "missing": {
+          "bought_together": 112590,
+          "categories": 112590,
+          "description": 93428,
+          "details": 4512,
+          "features": 95213,
+          "price": 94886,
+          "store": 11331,
+          "title": 12,
+          "videos": 96708
+        },
+        "types": {
+          "average_rating": {
+            "float": 112590
+          },
+          "bought_together": {
+            "NoneType": 112590
+          },
+          "categories": {
+            "list": 112590
+          },
+          "description": {
+            "list": 112590
+          },
+          "details": {
+            "dict": 112590
+          },
+          "features": {
+            "list": 112590
+          },
+          "images": {
+            "list": 112590
+          },
+          "main_category": {
+            "str": 112590
+          },
+          "parent_asin": {
+            "str": 112590
+          },
+          "price": {
+            "NoneType": 94886,
+            "float": 17704
+          },
+          "rating_number": {
+            "int": 112590
+          },
+          "store": {
+            "NoneType": 11331,
+            "str": 101259
+          },
+          "title": {
+            "str": 112590
+          },
+          "videos": {
+            "list": 112590
+          }
+        }
+      },
+      "retained_rows": 112590
+    },
+    "reviews": {
+      "changed_fields": {
+        "rating": 694253,
+        "text": 53270,
+        "title": 154
+      },
+      "cleaned_profile": {
+        "missing": {
+          "images": 635269,
+          "text": 705
+        },
+        "types": {
+          "asin": {
+            "str": 694253
+          },
+          "helpful_vote": {
+            "int": 694253
+          },
+          "images": {
+            "list": 694253
+          },
+          "parent_asin": {
+            "str": 694253
+          },
+          "rating": {
+            "int": 694253
+          },
+          "text": {
+            "NoneType": 705,
+            "str": 693548
+          },
+          "timestamp": {
+            "int": 694253
+          },
+          "title": {
+            "str": 694253
+          },
+          "user_id": {
+            "str": 694253
+          },
+          "verified_purchase": {
+            "bool": 694253
+          }
+        }
+      },
+      "errors": {},
+      "exact_duplicate_rows_removed": 7275,
+      "flags": {
+        "missing_review_text": 705
+      },
+      "raw_numeric_totals": {
+        "helpful_vote": 647923,
+        "rating": 2778223.0
+      },
+      "raw_profile": {
+        "missing": {
+          "images": 641844,
+          "text": 107
+        },
+        "types": {
+          "asin": {
+            "str": 701528
+          },
+          "helpful_vote": {
+            "int": 701528
+          },
+          "images": {
+            "list": 701528
+          },
+          "parent_asin": {
+            "str": 701528
+          },
+          "rating": {
+            "float": 701528
+          },
+          "text": {
+            "str": 701528
+          },
+          "timestamp": {
+            "int": 701528
+          },
+          "title": {
+            "str": 701528
+          },
+          "user_id": {
+            "str": 701528
+          },
+          "verified_purchase": {
+            "bool": 701528
+          }
+        }
+      },
+      "raw_rows": 701528,
+      "removed_duplicate_totals": {
+        "helpful_vote": 6313,
+        "rating": 28361.0
+      },
+      "retained_before_cleaning_profile": {
+        "missing": {
+          "images": 635269,
+          "text": 106
+        },
+        "types": {
+          "asin": {
+            "str": 694253
+          },
+          "helpful_vote": {
+            "int": 694253
+          },
+          "images": {
+            "list": 694253
+          },
+          "parent_asin": {
+            "str": 694253
+          },
+          "rating": {
+            "float": 694253
+          },
+          "text": {
+            "str": 694253
+          },
+          "timestamp": {
+            "int": 694253
+          },
+          "title": {
+            "str": 694253
+          },
+          "user_id": {
+            "str": 694253
+          },
+          "verified_purchase": {
+            "bool": 694253
+          }
+        }
+      },
+      "retained_rows": 694253
+    }
+  }
+}

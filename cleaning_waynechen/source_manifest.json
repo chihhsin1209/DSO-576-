@@ -1,0 +1,13 @@
+{
+  "dataset": "McAuley-Lab/Amazon-Reviews-2023",
+  "dataset_url": "https://huggingface.co/datasets/McAuley-Lab/Amazon-Reviews-2023",
+  "revision": "2b6d039ed471f2ba5fd2acb718bf33b0a7e5598e",
+  "download_date": "2026-10-04 (America/Los_Angeles)",
+  "scope": "Full All_Beauty review and metadata categories",
+  "source_branch_snapshot_commit": "14d977ee9dc441249520bb74b17cabaa72ab874e",
+  "files": [
+    {"path":"raw/review_categories/All_Beauty.jsonl","filename":"All_Beauty.jsonl","size":326611506,"rows":701528,"sha256":"36ca7c48440a8247b2dca0174d095238422b506a8a80c114dca722b7715f1c94"},
+    {"path":"raw/meta_categories/meta_All_Beauty.jsonl","filename":"meta_All_Beauty.jsonl","size":212990142,"rows":112590,"sha256":"1cfbdf6d2ccf9c3ac52a4508b15f31f8f340508a245b65c3e3b5f461e06e97ef"}
+  ],
+  "metadata_format_note": "Uses the full raw metadata JSONL published at the pinned revision rather than the parquet opened in the team's preliminary exploration. Full row count is independently checked; files are not claimed byte-equivalent."
+}

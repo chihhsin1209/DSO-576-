@@ -1,0 +1,92 @@
+[
+  {
+    "case": "HTML line breaks preserve words and typo",
+    "source_line": 37,
+    "original": {
+      "text": "Rrain hats are really handy when<br />one doesn't have an umbrella, and<br />easy to carry in a purse or pocket."
+    },
+    "expected": {
+      "text": "Rrain hats are really handy when\none doesn't have an umbrella, and\neasy to carry in a purse or pocket."
+    },
+    "reason": "Replace only the two br tags with newline; keep Rrain, punctuation and case.",
+    "actual": {
+      "text": "Rrain hats are really handy when\none doesn't have an umbrella, and\neasy to carry in a purse or pocket."
+    },
+    "matches": true
+  },
+  {
+    "case": "HTML ampersand preserves doubled spaces and wording",
+    "source_line": 19599,
+    "original": {
+      "text": "Great stuff and I'm a vey satisfied user/customer!  Tightens my skin &amp; it feels so soft!"
+    },
+    "expected": {
+      "text": "Great stuff and I'm a vey satisfied user/customer!  Tightens my skin & it feels so soft!"
+    },
+    "reason": "Decode amp entity once, retain vey, doubled spaces, and case.",
+    "actual": {
+      "text": "Great stuff and I'm a vey satisfied user/customer!  Tightens my skin & it feels so soft!"
+    },
+    "matches": true
+  },
+  {
+    "case": "Missing body retains valid rating",
+    "source_line": 15160,
+    "original": {
+      "text": "",
+      "rating": 5.0
+    },
+    "expected": {
+      "text": null,
+      "rating": 5
+    },
+    "reason": "Empty body is null; five-star rating stays in rating denominator.",
+    "actual": {
+      "text": null,
+      "rating": 5
+    },
+    "matches": true
+  },
+  {
+    "case": "Leading-zero ASIN remains string",
+    "source_line": 9585,
+    "original": {
+      "asin": "0816091846",
+      "parent_asin": "0816091846"
+    },
+    "expected": {
+      "asin": "0816091846",
+      "parent_asin": "0816091846"
+    },
+    "reason": "Never convert IDs to numeric; preserve leading zero. Off-category-looking product is retained.",
+    "actual": {
+      "asin": "0816091846",
+      "parent_asin": "0816091846"
+    },
+    "matches": true
+  },
+  {
+    "case": "Missing listing price is not imputed as zero",
+    "source_line": 1,
+    "metadata_source_line": 29625,
+    "original": {
+      "parent_asin": "B00YQ6X8EO",
+      "rating": 5.0,
+      "metadata_price": null
+    },
+    "expected": {
+      "parent_asin": "B00YQ6X8EO",
+      "rating": 5,
+      "metadata_matched": 1,
+      "product_price": null
+    },
+    "reason": "Independent full-source metadata lookup finds this product with null price. Retain matched review and do not invent a free product.",
+    "actual": {
+      "parent_asin": "B00YQ6X8EO",
+      "rating": 5,
+      "metadata_matched": 1,
+      "product_price": null
+    },
+    "matches": true
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "independent_raw_review_rows": 701528,
+  "independent_exact_duplicates": 7275,
+  "independent_retained_rows": 694253,
+  "independent_rating_sum": 2749862.0,
+  "independent_helpful_vote_sum": 641610,
+  "five_genuine_record_checks_passed": 5,
+  "sample_rows_verified_against_full_output": 50,
+  "synthetic_boundary_probes_passed": 5,
+  "joined_count_equals_retained": true,
+  "sqlite_integrity": "ok"
+}
