@@ -1,0 +1,6 @@
+check,original,expected,actual,matches
+1 - timestamp conversion,1627391044559,2021-07-27 13:04:04.559000,2021-07-27 13:04:04.559000,True
+2 - verified purchase conversion,0,False,False,True
+3 - review length calculation,351 original characters,351,351,True
+4 - blank review text handling,Blank review text,Keep blank and review_length = 0,Blank review text and review_length = 0,True
+5 - exact duplicate handling,122 duplicate rows in source,Remove duplicate copies and keep first occurrence,122 rows removed; 4565 rows remain,True

@@ -1,0 +1,2 @@
+starting_rows,starting_columns,exact_duplicates,final_rows,missing_values_original,missing_values_after,invalid_ratings,negative_helpful_votes,negative_prices,timestamp_conversion_failures,html_breaks_original
+4687,14,122,4565,0,0,0,0,0,0,1180

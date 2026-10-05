@@ -1,7 +1,7 @@
 # Project Starting Point
 
 ## Selected project area
-
+E-Commerce / AI
 Amazon Product-Listing Quality, focusing on the Appliances category.
 
 ## Why our team is interested in it
