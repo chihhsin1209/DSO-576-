@@ -3,8 +3,8 @@
 **Student:** Lame Wadipeba  
 **Project:** Amazon Beauty Product Reviews  
 **Branch:** cleaning-lamewadipeba  
-**Branch URL:**  
-**Commit ID:** [ADD AFTER FINAL COMMIT]
+**Branch URL:** https://github.com/chihhsin1209/DSO-576-/commits/cleaning-lamewadipeba/ 
+**Commit ID:** ad75f33847b0324a57ecd74546eb5507d3ce7a2f
 
 ## Project vision
 
