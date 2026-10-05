@@ -3,7 +3,7 @@
 **Student:** Lame Wadipeba  
 **Project:** Amazon Beauty Product Reviews  
 **Branch:** cleaning-lamewadipeba  
-**Branch URL:** [ADD AFTER PUSHING]  
+**Branch URL:**  
 **Commit ID:** [ADD AFTER FINAL COMMIT]
 
 ## Project vision
