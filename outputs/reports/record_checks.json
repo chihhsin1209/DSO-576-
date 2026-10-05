@@ -1,0 +1,78 @@
+[
+  {
+    "actual": {
+      "original": "None",
+      "price_numeric": null
+    },
+    "expected": null,
+    "field": "price_numeric",
+    "id": "A",
+    "original": "None",
+    "pass": true,
+    "reason": "Literal None means unknown price.",
+    "source_review_row": 1
+  },
+  {
+    "actual": {
+      "original": "9.99",
+      "price_numeric": 9.99
+    },
+    "expected": 9.99,
+    "field": "price_numeric",
+    "id": "B",
+    "original": "9.99",
+    "pass": true,
+    "reason": "Valid numeric string.",
+    "source_review_row": 31
+  },
+  {
+    "actual": {
+      "retained": true,
+      "store_missing": true
+    },
+    "expected": {
+      "retained": true,
+      "store_missing": true
+    },
+    "id": "C",
+    "pass": true,
+    "reason": "Missing store does not remove reviews.",
+    "source_review_row": 28
+  },
+  {
+    "actual": {
+      "cleaned_length": 819,
+      "only_trailing_nbsp_removed": true,
+      "original_length": 820,
+      "trailing_nbsp": true
+    },
+    "expected": {
+      "cleaned_length": 819,
+      "only_trailing_nbsp_removed": true,
+      "original_length": 820,
+      "trailing_nbsp": true
+    },
+    "id": "D",
+    "pass": true,
+    "reason": "Only outer whitespace changes; interior text and HTML preserved.",
+    "source_review_row": 213
+  },
+  {
+    "actual": {
+      "counterpart_retained": true,
+      "logged_first_row": 6566,
+      "raw_identical": true,
+      "removed": true
+    },
+    "expected": {
+      "counterpart_retained": true,
+      "logged_first_row": 6566,
+      "raw_identical": true,
+      "removed": true
+    },
+    "id": "E",
+    "pass": true,
+    "reason": "Exact full-raw duplicate of first occurrence 6566.",
+    "source_review_row": 6567
+  }
+]

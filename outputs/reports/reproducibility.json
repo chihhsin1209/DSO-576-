@@ -1,0 +1,57 @@
+{
+  "compared": [
+    {
+      "artifact": "data/beauty_cleaned.parquet",
+      "method": "exact logical table equality, including order/dtypes/nested values",
+      "pass": true
+    },
+    {
+      "artifact": "data/cleaned_sample.csv",
+      "method": "exact SHA-256",
+      "pass": true
+    },
+    {
+      "artifact": "data/product_metrics.parquet",
+      "method": "exact logical table equality, including order/dtypes/nested values",
+      "pass": true
+    },
+    {
+      "artifact": "data/products_cleaned.parquet",
+      "method": "exact logical table equality, including order/dtypes/nested values",
+      "pass": true
+    },
+    {
+      "artifact": "reports/audit.json",
+      "method": "exact SHA-256",
+      "pass": true
+    },
+    {
+      "artifact": "reports/cleaned_types.csv",
+      "method": "exact SHA-256",
+      "pass": true
+    },
+    {
+      "artifact": "reports/missing_counts.csv",
+      "method": "exact SHA-256",
+      "pass": true
+    },
+    {
+      "artifact": "reports/record_checks.json",
+      "method": "exact SHA-256",
+      "pass": true
+    },
+    {
+      "artifact": "reports/removed_duplicates.csv",
+      "method": "exact SHA-256",
+      "pass": true
+    },
+    {
+      "artifact": "reports/source_profile.json",
+      "method": "exact SHA-256",
+      "pass": true
+    }
+  ],
+  "excluded": "reproducibility.json (this report), executed notebook, PDF, independent_check.json; these are downstream artifacts",
+  "isolation": "Temporary output directory; raw inputs and baseline output files untouched.",
+  "status": "PASS"
+}

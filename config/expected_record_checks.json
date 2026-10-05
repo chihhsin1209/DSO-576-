@@ -1,0 +1,49 @@
+[
+  {
+    "id": "A",
+    "source_review_row": 1,
+    "field": "price_numeric",
+    "original": "None",
+    "expected": null,
+    "reason": "Literal None means unknown price."
+  },
+  {
+    "id": "B",
+    "source_review_row": 31,
+    "field": "price_numeric",
+    "original": "9.99",
+    "expected": 9.99,
+    "reason": "Valid numeric string."
+  },
+  {
+    "id": "C",
+    "source_review_row": 28,
+    "expected": {
+      "store_missing": true,
+      "retained": true
+    },
+    "reason": "Missing store does not remove reviews."
+  },
+  {
+    "id": "D",
+    "source_review_row": 213,
+    "expected": {
+      "original_length": 820,
+      "cleaned_length": 819,
+      "trailing_nbsp": true,
+      "only_trailing_nbsp_removed": true
+    },
+    "reason": "Only outer whitespace changes; interior text and HTML preserved."
+  },
+  {
+    "id": "E",
+    "source_review_row": 6567,
+    "expected": {
+      "raw_identical": true,
+      "removed": true,
+      "counterpart_retained": true,
+      "logged_first_row": 6566
+    },
+    "reason": "Exact full-raw duplicate of first occurrence 6566."
+  }
+]

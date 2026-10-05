@@ -1,0 +1,43 @@
+{
+  "metadata_columns": [
+    "main_category",
+    "title",
+    "average_rating",
+    "rating_number",
+    "features",
+    "description",
+    "price",
+    "images",
+    "videos",
+    "store",
+    "categories",
+    "details",
+    "parent_asin",
+    "bought_together",
+    "subtitle",
+    "author"
+  ],
+  "metadata_rows": 112590,
+  "original_review_fields": [
+    "asin",
+    "helpful_vote",
+    "images",
+    "parent_asin",
+    "rating",
+    "text",
+    "timestamp",
+    "title",
+    "user_id",
+    "verified_purchase"
+  ],
+  "review_grain": "One retained source reviewer-product record joined to one parent listing; user_id + parent_asin + timestamp is not asserted unique.",
+  "review_rows": 701528,
+  "sha256": {
+    "metadata": "14815cf1312a0d847364866e6876c8c73738993469067242870774c372c04387",
+    "reviews": "36ca7c48440a8247b2dca0174d095238422b506a8a80c114dca722b7715f1c94"
+  },
+  "sources": {
+    "metadata": "data/raw/full-00000-of-00001 (1).parquet",
+    "reviews": "data/raw/All_Beauty.jsonl"
+  }
+}

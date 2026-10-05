@@ -1,0 +1,81 @@
+{
+  "sources": {
+    "reviews": "data/raw/All_Beauty.jsonl",
+    "metadata": "data/raw/full-00000-of-00001 (1).parquet"
+  },
+  "source_sha256": {
+    "reviews": "36ca7c48440a8247b2dca0174d095238422b506a8a80c114dca722b7715f1c94",
+    "metadata": "14815cf1312a0d847364866e6876c8c73738993469067242870774c372c04387"
+  },
+  "review_grain": "One retained source reviewer-product record joined to one parent listing; user_id + parent_asin + timestamp is not asserted unique.",
+  "rules": {
+    "duplicates": "SHA-256 of sorted-key canonical JSON of ALL raw fields including images; keep first source occurrence. No deletion for repeated IDs.",
+    "text": "Preserve originals; derived text strips outer whitespace, blank to null; preserve case, punctuation, HTML, interior whitespace and encoding. Never normalize IDs.",
+    "price": "Preserve raw; strip outer whitespace, None/empty to null; numeric parse failures flagged; negative/nonfinite to null and flagged; zero and >1000 retained and flagged.",
+    "store": "Null stays null; flag missing; no deletion; store is not assumed brand.",
+    "timestamp": "Preserve epoch milliseconds; UTC derived time; flag missing, failed, and outside May 1996 through September 2023.",
+    "validation": "Derived rating integer 1-5, helpful vote nonnegative integer, verified purchase actual boolean; otherwise null and flag.",
+    "content": "Retain arrays and details raw; ordered newline text; parsed details serialized as JSON; empty captured containers mean absent usable content.",
+    "merge": "Metadata parent_asin nonnull and unique; left many-to-one; retain all metadata products.",
+    "metrics": "Valid denominators; price mean at unique product grain; dropna=False grouping; helpful sums min_count=1.",
+    "sample": "50 rows: retained predefined cases, duplicate counterpart 6566, first observed flags, remaining deterministic random seed 576."
+  },
+  "expected": {
+    "raw_reviews": 701528,
+    "duplicate_copies_removed": 7275,
+    "duplicate_groups": 6138,
+    "retained_reviews": 694253,
+    "metadata_records": 112590,
+    "merged_rows": 694253,
+    "unmatched_retained_reviews": 0,
+    "unmatched_parent_keys": 0,
+    "extra_merge_rows": 0,
+    "duplicate_metadata_keys": 0,
+    "metadata_without_retained_review": 25,
+    "raw_rating_sum": 2778223,
+    "duplicate_rating_sum": 28361,
+    "retained_rating_sum": 2749862,
+    "raw_helpful_total": 647923,
+    "duplicate_helpful_total": 6313,
+    "retained_helpful_total": 641610,
+    "review_title_changes": 46,
+    "review_body_changes": 746,
+    "blank_review_bodies": 705,
+    "products_missing_price": 94886,
+    "reviews_missing_price": 510545,
+    "price_parse_failures": 0,
+    "reviews_price_over_1000": 13,
+    "reviews_missing_store": 49380,
+    "timestamp_failed": 0,
+    "timestamp_outside_window": 0,
+    "rating_invalid": 0,
+    "helpful_vote_invalid": 0,
+    "verified_purchase_invalid": 0,
+    "details_parse_failures": 0,
+    "negative_reviews": 143489,
+    "verified_reviews": 628456,
+    "valid_price_products": 17704,
+    "features_missing": 95213,
+    "description_missing": 93428,
+    "categories_missing": 112590,
+    "details_missing": 4512
+  },
+  "expected_metrics": {
+    "mean_review_rating": {
+      "value": 3.960893,
+      "tolerance": 5e-07
+    },
+    "negative_review_rate": {
+      "value": 0.206681,
+      "tolerance": 5e-07
+    },
+    "verified_purchase_rate": {
+      "value": 0.905226,
+      "tolerance": 5e-07
+    },
+    "mean_available_product_price": {
+      "value": 27.25573,
+      "tolerance": 5e-07
+    }
+  }
+}
